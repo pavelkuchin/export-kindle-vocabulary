@@ -54,7 +54,7 @@ print '%d total; %d new;' % (len(kindle_words), len(new_words))
 
 print 'Getting translations and filling dictionary...'
 for c, i in enumerate(new_words):
-    print '[%d of %d]' % (c, len(new_words)),
+    print '[%d of %d]' % (c+1, len(new_words)),
     tr = lla.get_translations(i[0])
     if not tr['userdict3']['translations']:
         print "There are no translations for word '%s'" % i[0]

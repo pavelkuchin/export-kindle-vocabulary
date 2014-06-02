@@ -7,7 +7,7 @@ import json
 import unicodedata
 
 class LinguaLeoAPI():
-    BASEURL = "http://lingualeo.ru"
+    BASEURL = "http://lingualeo.com"
 
     URLs = {
         'login': BASEURL + '/ru/login',
